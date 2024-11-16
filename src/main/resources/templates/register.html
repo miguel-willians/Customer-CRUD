@@ -8,13 +8,20 @@
     <title>CRS | Customer Registration</title>
   </head>
   <body>
-    <h1>Customer Registration</h1>
-    <nav>
-      <ul>
-        <li><a th:href="@{/}">Home</a></li>
-        <li><a th:href="@{/customers}">View customers</a></li>
-      </ul>
-    </nav>
+    <header>
+      <h1>
+        <li><a th:href="@{/}">CRS</a></li>
+      </h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/register}">Register a new customer</a></li>
+          <li><a th:href="@{/customers}">View customers</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Customer Registration</h2>
+
     <form th:action="@{/register}" method="post" th:object="${customer}">
       <label for="username">Username</label>
       <input

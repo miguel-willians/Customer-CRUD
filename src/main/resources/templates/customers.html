@@ -8,13 +8,18 @@
     <title>Customer List</title>
   </head>
   <body>
-    <h1>List of Customers</h1>
-    <nav>
-      <ul>
-        <li><a th:href="@{/}">Home</a></li>
-        <li><a th:href="@{/register}">Register a new customer</a></li>
-      </ul>
-    </nav>
+    <header>
+      <h1>
+        <li><a th:href="@{/}">CRS</a></li>
+      </h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/register}">Register a new customer</a></li>
+          <li><a th:href="@{/customers}">View customers</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>List of Customers</h2>
     <table border="1">
       <thead>
         <tr>
