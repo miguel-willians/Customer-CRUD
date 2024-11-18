@@ -12,5 +12,5 @@ FROM openjdk:17-jdk-alpine
 
     RUN ls -l ./target
 
-	CMD ['java', '-jar', 'target/sitebd.war']
+	CMD ['java', '-jar', 'target/sitebd.war'] 
 
