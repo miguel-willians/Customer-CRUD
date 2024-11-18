@@ -2,15 +2,15 @@ FROM openjdk:17-jdk-alpine
 
 	WORKDIR /app
 
-	COPY pom.xml . --> faz o java compilar
+	COPY pom.xml . 
 	COPY mvnw . 
 	COPY .mvn .mvn
-	COPY src ./src --> seu projeto 
-	RUN chmod 777 mvnw --> Ou +x (mais seguro)
+	COPY src ./src 
+	RUN chmod 777 mvnw 
 
-	RUN ./mvnw package --> Compila o projeto
+	RUN ./mvnw package 
 
     RUN ls -l ./target
 
-	CMD ['java', '-jar', 'target/sitebd.war'] --> executa
+	CMD ['java', '-jar', 'target/sitebd.war']
 
