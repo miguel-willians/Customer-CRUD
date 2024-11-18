@@ -10,5 +10,7 @@ FROM openjdk:17-jdk-alpine
 
 	RUN ./mvnw package --> Compila o projeto
 
+    RUN ls -l ./target
+
 	CMD ['java', '-jar', 'target/sitebd.war'] --> executa
 
