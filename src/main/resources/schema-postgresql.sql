@@ -1,6 +1,8 @@
-CREATE table if not exists customer(
-    cd_customer serial primary key,
-    nm_customer varchar(20) not null unique,
-    ds_email varchar(35) not null unique,
-    password varchar(255) not null
+DROP TABLE IF EXISTS customer CASCADE;
+
+CREATE TABLE IF NOT EXISTS customer (
+    cd_customer SERIAL PRIMARY KEY,
+    nm_customer VARCHAR(20) NOT NULL UNIQUE,
+    ds_email VARCHAR(35) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
 );
