@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:postgresql://dpg-cstp9maj1k6c73efp4ag-a.oregon-postgres.render.com:5432/users_wtgl
     username: users_wtgl_user
-    password: ${PGPASSWORD:}
+    password: 1gZSjO14nqxKAAsZGeDM2pIyHUBfIspw
     driver-class-name: org.postgresql.Driver
 
   jpa:
