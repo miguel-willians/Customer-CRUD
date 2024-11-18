@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://cstnpkdumphs73frmh70-a.oregon-postgres.render.com:5432/users_lxtq
+    url: jdbc:postgresql://dpg-cstnpkdumphs73frmh70-a.oregon-postgres.render.com:5432/users_lxtq
     username: users_lxtq_user
     password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
